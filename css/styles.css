@@ -155,8 +155,13 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-portfolio,
-.link-portfolio-two:hover,
+.link-portfolio:hover {
+  color: var(--accent-color);
+}
+
+.link-portfolio-two:hover {
+  color: var(--accent-color);
+}
 .link-portfolio,
 .link-portfolio-two:focus {
   color: var(--accent-color);
@@ -484,7 +489,7 @@ ul {
   background-color: #f5f4fa;
   border-radius: 4px;
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .prioritets {
@@ -524,7 +529,8 @@ ul {
 .work:focus {
   color: var(--accent-color);
 }
-.images-work {
+
+.list-images > .item {
   position: relative;
 }
 .annex {
@@ -535,7 +541,7 @@ ul {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  bottom: -112px;
+  bottom: 3px;
 }
 .annexes {
   font-family: Roboto;
@@ -988,7 +994,6 @@ ul {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50% 50%) scale(1);
@@ -998,7 +1003,7 @@ ul {
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
-  position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -1019,5 +1024,10 @@ ul {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  margin-left: 490px;
+  top: 8px;
+  right: 8px;
+  align-items: center;
+
+  display: flex;
+  align-items: center;
 }
